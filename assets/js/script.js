@@ -98,6 +98,10 @@
         });
     }
 
+    function optionSelected() {
+        $('.navigation-holder').removeClass('slideInn');
+        $('.open-btn').removeClass('x-close');
+    }
 
     // smooth-scrolling
     function smoothScrolling($scrollLinks, $topOffset) {
@@ -105,6 +109,7 @@
         var topGap = $topOffset;
 
         links.on("click", function() {
+            optionSelected();
             if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
                 var target = $(this.hash);
                 target = target.length ? target : $("[name=" + this.hash.slice(1) +"]");
