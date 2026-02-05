@@ -122,12 +122,14 @@
             }
             return false;
         });
+
     }
 
 
 
 
     $("body").on("click", function() {
+        optionSelected();
         $('.navigation-holder').removeClass('slideInn');
     });
     $(".menu-close").on("click", function() {
