@@ -330,6 +330,8 @@
     if ($(".video-btn").length) {
         $(".video-btn").on("click", function(){
             $.fancybox({
+                height: 600,
+                autoSize: false,
                 href: this.href,
                 type: $(this).data("type"),
                 'title'         : this.title,
