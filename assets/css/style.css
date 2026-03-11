@@ -4840,7 +4840,8 @@ wpo-hero-slider-s3
 .wpo-video-section {
   position: relative;
   z-index: 1;
-  background: url(../images/cta.jpg) no-repeat center center;
+  /*background: url(../images/cta.jpg) no-repeat center center;*/
+  background: url(../images/fondo_video.jpg) no-repeat center center;
   height: 400px;
   background-attachment: fixed;
 }
